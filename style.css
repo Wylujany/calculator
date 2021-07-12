@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #22252d;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #22252d;
+}
+#display {
+  width: 90%;
+  font-size: 50px;
+  text-align: right;
+  background-color: #22252d;
+}
+.padButton {
+  padding: 30px;
+  background: #272b34;
+  border-radius: 15px;
+  color: white;
+  font-size: 30px;
+  border: none;
+}
+.operator {
+  color: #f47a7a;
+}
+.actions {
+  color: #26ffd8;
+}
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background: #292d36;
+  grid-template-areas:
+    "clear clear backspace divide"
+    "sever eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero decimal equals equals";
+  gap: 10px;
+  text-align: center;
+}
+
+#clear {
+  grid-area: clear;
+}
+#equals {
+  grid-area: equals;
+}
