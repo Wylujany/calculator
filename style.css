@@ -47,7 +47,8 @@ body {
 .operator {
   color: #f47a7a;
 }
-.actions {
+.clear,
+.backspace {
   color: #26ffd8;
 }
 
@@ -71,4 +72,5 @@ body {
 }
 .equals {
   grid-area: equals;
+  color: #f47a7a;
 }
