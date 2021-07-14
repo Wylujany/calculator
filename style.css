@@ -22,12 +22,16 @@ body {
   align-items: center;
   background-color: #22252d;
 }
-#display {
+
+.display {
+  height: 70px;
   width: 90%;
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
   background-color: #22252d;
+  color: white;
 }
+
 .padButton {
   padding: 30px;
   background: #272b34;
@@ -35,6 +39,10 @@ body {
   color: white;
   font-size: 30px;
   border: none;
+  cursor: pointer;
+}
+.padButton:hover {
+  background: #707070;
 }
 .operator {
   color: #f47a7a;
@@ -42,6 +50,7 @@ body {
 .actions {
   color: #26ffd8;
 }
+
 #buttons-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -57,9 +66,9 @@ body {
   text-align: center;
 }
 
-#clear {
+.clear {
   grid-area: clear;
 }
-#equals {
+.equals {
   grid-area: equals;
 }
